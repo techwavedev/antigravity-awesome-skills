@@ -7,6 +7,60 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ---
 
+## [5.8.0] - 2026-02-19 - "Domain-Driven Design Suite"
+
+> **First full DDD skill suite: strategic design, context mapping, and tactical patterns for complex domains.**
+
+This release introduces a comprehensive Domain-Driven Design skill suite (4 new skills) contributed by the community, plus playbook fixes for saga-orchestration and event-store-design, and new DDD-themed bundle and workflow entries.
+
+## 🚀 New Skills
+
+### 🏗️ [domain-driven-design](skills/domain-driven-design/)
+
+**Entry point and router for all DDD adoption decisions.**
+Covers viability checks, routing to strategic/tactical/evented sub-skills, and output requirements.
+
+- **Key Feature**: Viability check gate — avoids over-engineering simple systems.
+- **Key Feature**: Routing map to `@ddd-strategic-design`, `@ddd-context-mapping`, `@ddd-tactical-patterns`, CQRS, event sourcing, sagas, projections.
+
+> **Try it:** `Use @domain-driven-design to assess if this billing platform should adopt full DDD.`
+
+### 🗺️ [ddd-strategic-design](skills/ddd-strategic-design/)
+
+**Subdomains, bounded contexts, and ubiquitous language.**
+Produces subdomain classification tables, bounded context catalogs, and glossaries.
+
+### 🔗 [ddd-context-mapping](skills/ddd-context-mapping/)
+
+**Cross-context integration contracts and anti-corruption layers.**
+Defines upstream/downstream ownership, translation rules, and versioning policies.
+
+### 🧩 [ddd-tactical-patterns](skills/ddd-tactical-patterns/)
+
+**Aggregates, value objects, repositories, and domain events in code.**
+Includes a TypeScript aggregate example with invariant enforcement.
+
+---
+
+## 📦 Improvements
+
+- **Registry Update**: Now tracking 868 skills.
+- **saga-orchestration** and **event-store-design**: Added missing `resources/implementation-playbook.md`.
+- **docs/BUNDLES.md**: Added DDD & Evented Architecture bundle section.
+- **docs/WORKFLOWS.md** + **data/workflows.json**: New "Design a DDD Core Domain" workflow entry.
+
+## 👥 Credits
+
+A huge shoutout to our community contributors:
+
+- **[@rcigor](https://github.com/rcigor)** for the full DDD skill suite (PR #98)
+
+---
+
+_Upgrade now: `git pull origin main` to fetch the latest skills._
+
+---
+
 ## [5.7.0] - 2026-02-18 - "Yandex Direct Audit"
 
 > **First agentic skill for the Russian PPC market, offering comprehensive Yandex Direct account auditing.**
