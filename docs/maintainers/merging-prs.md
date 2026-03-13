@@ -12,6 +12,12 @@
 
 Resolve conflicts **on the PR branch** so the PR becomes mergeable, then use "Squash and merge" on GitHub.
 
+### Generated files policy
+
+- Treat `README.md`, `CATALOG.md`, `skills_index.json`, and `data/*.json` as **derived artifacts**, not hand-edited source of truth.
+- If those files conflict during a PR refresh, prefer **`main`'s side**, then rerun `npm run chain` and `npm run catalog`.
+- Do not block a PR only because shared generated files would be regenerated differently after other merges. `main` auto-syncs the final state after merge.
+
 ### Steps (maintainer resolves conflicts on the contributor’s branch)
 
 1. **Fetch the PR branch**  
@@ -20,7 +26,9 @@ Resolve conflicts **on the PR branch** so the PR becomes mergeable, then use "Sq
    `git checkout pr-<PR_NUMBER>`
 3. **Merge `main` into it**  
    `git merge origin/main`  
-   Resolve any conflicts in the working tree (e.g. `README.md`, `CATALOG.md`, `data/*.json`, `skills_index.json`). Run `npm run chain` and `npm run catalog` if registry files were touched, then `git add` the updated generated files.
+   Resolve any conflicts in the working tree. For generated registry files (`README.md`, `CATALOG.md`, `data/*.json`, `skills_index.json`), prefer `main`'s version and regenerate:
+   `git checkout --theirs README.md CATALOG.md data/catalog.json skills_index.json`
+   Then run `npm run chain` and `npm run catalog`, and `git add` the refreshed generated files.
 4. **Commit the merge**  
    `git add .` then `git commit -m "chore: merge main to resolve conflicts"` (or leave the default merge message).
 5. **Push to the same branch the PR is from**  

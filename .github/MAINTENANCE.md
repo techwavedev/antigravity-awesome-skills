@@ -35,11 +35,13 @@ If you touch **any of these**:
 - Running `npm run chain` is **NOT optional**.
 - Running `npm run catalog` is **NOT optional**.
 
-If CI fails with:
+For contributor PRs, generated drift is now **informational** in CI because shared registry artifacts are auto-synced on `main` after merge. Contributors should still run the chain locally so the PR content is reviewable and maintainers can reproduce the generated output when needed.
+
+If `main` CI fails with:
 
 > `❌ Detected uncommitted changes produced by registry/readme/catalog scripts.`
 
-it means you **did not run or commit** the Validation Chain correctly.
+it means the repository could not auto-sync generated artifacts cleanly and maintainer intervention is required.
 
 ### 3. 📝 EVIDENCE OF WORK
 
@@ -79,7 +81,8 @@ Before ANY commit that adds/modifies skills, run the chain:
     git add README.md skills_index.json data/catalog.json data/bundles.json data/aliases.json CATALOG.md
     git commit -m "chore: sync generated files"
     ```
-    > 🔴 **CRITICAL**: If you skip this, CI will fail with "Detected uncommitted changes".
+    > 🔴 **CRITICAL for direct `main` work**: If you skip this on maintainer work that lands directly on `main`, CI will fail with "Detected uncommitted changes".
+    > For contributor PRs, generated drift is allowed in CI and is auto-synced after merge.
     > See [`docs/maintainers/ci-drift-fix.md`](../docs/maintainers/ci-drift-fix.md) for details.
 
 ### B. When You Merge a PR (Step-by-Step)
@@ -89,14 +92,14 @@ Before ANY commit that adds/modifies skills, run the chain:
 **Before merging:**
 
 1.  **CI is green** — Validation, reference checks, tests, and generated artifact steps passed (see [`.github/workflows/ci.yml`](workflows/ci.yml)).
-2.  **No drift** — PR does not introduce uncommitted generated-file changes; if the "Check for Uncommitted Drift" step failed, ask the author to run `npm run chain` and `npm run catalog` and commit the result.
+2.  **Generated drift understood** — On pull requests, generator drift is informational only. Do not block a good PR solely because `README.md`, `CATALOG.md`, or catalog/index files would be regenerated. `main` auto-syncs those artifacts after merge.
 3.  **Quality Bar** — PR description confirms the [Quality Bar Checklist](.github/PULL_REQUEST_TEMPLATE.md) (metadata, risk label, credits if applicable).
 4.  **Issue link** — If the PR fixes an issue, the PR description should contain `Closes #N` or `Fixes #N` so GitHub auto-closes the issue on merge.
 
 **How you merge:**
 
 - **Always merge via GitHub** so the PR shows as **Merged** and the contributor gets credit. Use **"Squash and merge"**. Do **not** integrate locally and then close the PR — that would show "Closed" and the contributor would not get proper attribution.
-- **If the PR has merge conflicts:** Resolve them **on the PR branch** (you or the contributor: merge `main` into the PR branch, fix conflicts, run `npm run chain` and `npm run catalog` if needed, push). Then use **"Squash and merge"** on GitHub. Full steps: [docs/maintainers/merging-prs.md](../docs/maintainers/merging-prs.md).
+- **If the PR has merge conflicts:** Resolve them **on the PR branch** (you or the contributor: merge `main` into the PR branch, fix conflicts, run `npm run chain` and `npm run catalog` if needed, push). For generated registry files, prefer keeping `main`'s side and regenerating rather than hand-editing conflicts. Then use **"Squash and merge"** on GitHub. Full steps: [docs/maintainers/merging-prs.md](../docs/maintainers/merging-prs.md).
 - **Rare exception:** Only if merging via GitHub is not possible, you may integrate locally and close the PR; in that case you **must** add a Co-authored-by line to the commit and explain in a comment. Prefer to avoid this so PRs are always **Merged**.
 
 **If a PR was closed after local integration (reopen and merge):**

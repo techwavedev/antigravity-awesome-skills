@@ -5,7 +5,7 @@ permissions:
 
 on:
   push:
-    branches: ["main", "feat/*"]
+    branches: ["main"]
   pull_request:
     branches: ["main"]
   workflow_dispatch:
@@ -94,11 +94,35 @@ jobs:
           git commit -m "chore: sync generated registry files [ci skip]"
           git push origin HEAD
 
+      - name: ℹ️ Report generated drift (PRs only)
+        if: github.event_name == 'pull_request'
+        run: |
+          if git diff --quiet; then
+            echo "No generated drift detected after validation/build."
+            exit 0
+          fi
+
+          echo "::notice::Generated registry/readme drift detected on this PR."
+          echo "This is informational only on pull requests because main auto-syncs generated artifacts after merge."
+          echo "Files changed by generators:"
+          git diff --name-only
+          {
+            echo "## Generated Drift"
+            echo
+            echo "This PR changes source files that regenerate shared registry artifacts."
+            echo "The drift is allowed on pull requests and will be auto-synced on \`main\` after merge."
+            echo
+            echo "Changed generated files:"
+            git diff --name-only | sed 's/^/- `/; s/$/`/'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       - name: 🚨 Check for Uncommitted Drift
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         run: |
           if ! git diff --quiet; then
             echo "❌ Detected uncommitted changes produced by registry/readme/catalog scripts."
             echo
+            echo "Main must be self-healing after the auto-sync step."
             echo "To fix locally, run the FULL Validation Chain, then commit and push:"
             echo "  npm run chain"
             echo "  npm run catalog"
