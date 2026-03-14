@@ -80,6 +80,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "acceptance-orchestrator",
+    "path": "skills/acceptance-orchestrator",
+    "category": "uncategorized",
+    "name": "acceptance-orchestrator",
+    "description": "Use when a coding task should be driven end-to-end from issue intake through implementation, review, deployment, and acceptance verification with minimal human re-intervention.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-12"
+  },
+  {
     "id": "accessibility-compliance-accessibility-audit",
     "path": "skills/accessibility-compliance-accessibility-audit",
     "category": "uncategorized",
@@ -578,6 +588,16 @@
     "risk": "safe",
     "source": "community",
     "date_added": "2026-03-07"
+  },
+  {
+    "id": "antigravity-skill-orchestrator",
+    "path": "skills/antigravity-skill-orchestrator",
+    "category": "meta",
+    "name": "antigravity-skill-orchestrator",
+    "description": "A meta-skill that understands task requirements, dynamically selects appropriate skills, tracks successful skill combinations using agent-memory-mcp, and prevents skill overuse for simple tasks.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-13"
   },
   {
     "id": "antigravity-workflows",
@@ -3220,6 +3240,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "closed-loop-delivery",
+    "path": "skills/closed-loop-delivery",
+    "category": "uncategorized",
+    "name": "closed-loop-delivery",
+    "description": "Use when a coding task must be completed against explicit acceptance criteria with minimal user re-intervention across implementation, review feedback, deployment, and runtime verification.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-12"
+  },
+  {
     "id": "cloud-architect",
     "path": "skills/cloud-architect",
     "category": "uncategorized",
@@ -3858,6 +3888,16 @@
     "risk": "unknown",
     "source": "unknown",
     "date_added": null
+  },
+  {
+    "id": "create-issue-gate",
+    "path": "skills/create-issue-gate",
+    "category": "uncategorized",
+    "name": "create-issue-gate",
+    "description": "Use when starting a new implementation task and an issue must be created with strict acceptance criteria gating before execution.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-12"
   },
   {
     "id": "create-pr",
@@ -4678,6 +4718,16 @@
     "risk": "safe",
     "source": "community",
     "date_added": "2026-03-06"
+  },
+  {
+    "id": "electron-development",
+    "path": "skills/electron-development",
+    "category": "uncategorized",
+    "name": "electron-development",
+    "description": "Master Electron desktop app development with secure IPC, contextIsolation, preload scripts, multi-process architecture, electron-builder packaging, code signing, and auto-update.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-12"
   },
   {
     "id": "elixir-pro",
@@ -6650,6 +6700,16 @@
     "date_added": "2026-02-27"
   },
   {
+    "id": "interview-coach",
+    "path": "skills/interview-coach",
+    "category": "productivity",
+    "name": "interview-coach",
+    "description": "Full job search coaching system \u2014 JD decoding, resume, storybank, mock interviews, transcript analysis, comp negotiation. 23 commands, persistent state.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-11"
+  },
+  {
     "id": "inventory-demand-planning",
     "path": "skills/inventory-demand-planning",
     "category": "uncategorized",
@@ -7220,6 +7280,16 @@
     "date_added": "2026-03-04"
   },
   {
+    "id": "llm-structured-output",
+    "path": "skills/llm-structured-output",
+    "category": "uncategorized",
+    "name": "llm-structured-output",
+    "description": "Get reliable JSON, enums, and typed objects from LLMs using response_format, tool_use, and schema-constrained decoding across OpenAI, Anthropic, and Google APIs.\n",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-03-12"
+  },
+  {
     "id": "local-legal-seo-audit",
     "path": "skills/local-legal-seo-audit",
     "category": "uncategorized",
@@ -7615,7 +7685,7 @@
     "category": "uncategorized",
     "name": "metasploit-framework",
     "description": "This skill should be used when the user asks to \"use Metasploit for penetration testing\", \"exploit vulnerabilities with msfconsole\", \"create payloads with msfvenom\", \"perform post-exp...",
-    "risk": "unknown",
+    "risk": "offensive",
     "source": "community",
     "date_added": "2026-02-27"
   },
@@ -9008,6 +9078,16 @@
     "risk": "unknown",
     "source": "community",
     "date_added": "2026-02-27"
+  },
+  {
+    "id": "privacy-by-design",
+    "path": "skills/privacy-by-design",
+    "category": "uncategorized",
+    "name": "privacy-by-design",
+    "description": "Use when building apps that collect user data. Ensures privacy protections are built in from the start\u2014data minimization, consent, encryption.",
+    "risk": "safe",
+    "source": "community",
+    "date_added": "2026-02-23"
   },
   {
     "id": "privilege-escalation-methods",

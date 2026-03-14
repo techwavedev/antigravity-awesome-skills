@@ -8,6 +8,70 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ---
 
 ## [Unreleased]
+
+## Documentation
+
+- Refreshed `README.md` release copy, star milestone badge, and TOC heading alignment so the top-level docs match the current `7.6.0` repository state.
+- Aligned the evergreen English docs with the current `7.6.0` / `1,250+ skills` repository state and removed emoji from active H2 headers to keep anchors stable under the maintenance rules.
+- Updated maintainer CI/merge docs and workflow policy so generated registry drift is informational on PRs and auto-synced on `main`, reducing merge friction across concurrent skill submissions.
+
+## [7.7.0] - 2026-03-13 - "Merge Friction Reduction"
+
+> **Shipped four maintained PR outcomes, stabilized generated-file CI, and cut release friction for future contributor merges**
+
+This release turns a noisy maintainer workflow into a predictable one. It merges the latest community skill additions, integrates the cleaned `privacy-by-design` contribution under the maintainer exception path, and removes the biggest source of PR churn by making generated registry drift informational on pull requests while keeping `main` self-healing and strict.
+
+## New Skills
+
+- **llm-structured-output** — structured JSON/schema extraction patterns across OpenAI, Anthropic, and Gemini (PR #280)
+- **electron-development** — secure Electron architecture, IPC hardening, packaging, signing, and updates (PR #282)
+- **privacy-by-design** — privacy-first software design patterns and implementation guidance (PR #283)
+- **antigravity-skill-orchestrator** — meta-skill for selecting and coordinating the best skill set for a task (PR #285)
+
+## Improvements
+
+- **CI determinism**: `tools/scripts/update_readme.py` and `tools/scripts/sync_repo_metadata.py` now preserve volatile README sync metadata during normal runs instead of rewriting stars/timestamps and causing PR drift.
+- **PR merge flow**: `.github/workflows/ci.yml` now reports generated registry drift as informational on PRs while keeping `main` strict and auto-syncing the final artifact set after merge.
+- **Maintainer docs**: Updated `.github/MAINTENANCE.md`, `docs/maintainers/ci-drift-fix.md`, and `docs/maintainers/merging-prs.md` to document the new lower-friction merge procedure.
+- **Windows issue triage**: Clarified that issue `#281` remains open as an installer/symlink problem distinct from truncation-loop issue `#274`, closed `#284` against the shipped recovery guidance, and opened follow-up issue `#286`.
+
+## Credits
+
+- **[@sx4im](https://github.com/sx4im)** for `llm-structured-output` (PR #280)
+- **[@MatheusCampagnolo](https://github.com/MatheusCampagnolo)** for `electron-development` (PR #282)
+- **[@Abdeltoto](https://github.com/Abdeltoto)** for `privacy-by-design` (PR #283)
+- **[@wahidzzz](https://github.com/wahidzzz)** for `antigravity-skill-orchestrator` (PR #285)
+
+## [7.6.0] - 2026-03-12 - "Maintenance Sweep"
+
+> **Merged community PRs, documented Windows truncation recovery, and hardened Metasploit setup guidance**
+
+This release finishes a focused maintenance sweep across open pull requests and issues. It merges four community updates, ships the Jetski/Gemini overflow and path-safety documentation from the context overflow fix, adds a Windows recovery guide for truncation crash loops, and removes the non-deterministic Metasploit installer flow from the security skill.
+
+## New Skills
+
+- **acceptance-orchestrator** — acceptance-driven execution orchestration (PR #277)
+- **closed-loop-delivery** — delivery workflow with feedback loops (PR #277)
+- **create-issue-gate** — issue creation quality gate (PR #277)
+- **interview-coach** — interview preparation and coaching (PR #272)
+
+## Improvements
+
+- **PR maintenance**: Merged PRs #277, #272, #275, #278, and #271 using GitHub squash merge so all contributors receive merge credit.
+- **Jetski/Gemini loader docs**: Documented `overflowBehavior` handling and `skillsRoot`-confined path validation in the reference loader and integration guide (PR #271).
+- **Windows recovery docs**: Added `docs/users/windows-truncation-recovery.md` and linked it from the main user docs for truncation/context crash loops on Windows.
+- **Metasploit safety**: Replaced the remote installer pattern in `skills/metasploit-framework/SKILL.md` with an explicit "Metasploit must already be installed" prerequisite, and marked the skill as `risk: offensive` with the required warning.
+- **Repo sync**: Refreshed README metadata, generated registry files, and contributor acknowledgements before release.
+
+## Credits
+
+- **[@qcwssss](https://github.com/qcwssss)** for `acceptance-orchestrator`, `closed-loop-delivery`, and `create-issue-gate` (PR #277)
+- **[@dbhat93](https://github.com/dbhat93)** for `interview-coach` (PR #272)
+- **[@rafsilva85](https://github.com/rafsilva85)** for the credit source addition (PR #275)
+- **[@iftikharg786](https://github.com/iftikharg786)** for the star-history update branch that was refreshed and merged as PR #278
+- **[@DiggaX](https://github.com/DiggaX)** for the Windows recovery workflow shared in issue #274
+- **[@copilot-swe-agent](https://github.com/apps/copilot-swe-agent)** for the Jetski/Gemini overflow loader changes in PR #271
+
 ## [7.5.0] - 2026-03-11 - "Socratic Governance"
 
 > **Introducing Truth Engines, Local Inference optimizations, and Advanced Output Formatting**

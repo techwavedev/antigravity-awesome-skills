@@ -18,6 +18,7 @@ This example shows one way to integrate **antigravity-awesome-skills** with a Je
     - one system message per selected skill;
     - the rest of the trajectory.
 - How to enforce a **maximum number of skills per turn** via `maxSkillsPerTurn`.
+- How to choose whether to **truncate or error** when too many skills are requested via `overflowBehavior`.
 
 This pattern avoids context overflow when you have 1,200+ skills installed.
 
@@ -68,6 +69,7 @@ async function runTurn(trajectory: Message[]) {
     skillIndex,
     skillsRoot: SKILLS_ROOT,
     maxSkillsPerTurn: 8,
+    overflowBehavior: "error",
   });
 
   // 3. Pass `modelMessages` to your Jetski/Cortex + Gemini client
@@ -87,5 +89,6 @@ Adapt the paths and model call to your environment.
   - uses Node.js `fs`/`path` APIs and TypeScript types for clarity.
 - In a real host:
   - wire `buildModelMessages` into the point where you currently assemble the prompt before `TrajectoryChatConverter`;
+  - consider `overflowBehavior: "error"` if you want a clear user-facing failure instead of silently dropping extra skills;
+  - keep path validation so manifest entries cannot escape your configured skills root;
   - add token‑counting / truncation logic if you want a stricter safety budget.
-

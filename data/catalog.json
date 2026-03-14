@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-02-08T00:00:00.000Z",
-  "total": 1246,
+  "total": 1254,
   "skills": [
     {
       "id": "00-andruia-consultant",
@@ -161,6 +161,31 @@
         "execution"
       ],
       "path": "skills/ab-test-setup/SKILL.md"
+    },
+    {
+      "id": "acceptance-orchestrator",
+      "name": "acceptance-orchestrator",
+      "description": "Use when a coding task should be driven end-to-end from issue intake through implementation, review, deployment, and acceptance verification with minimal human re-intervention.",
+      "category": "infrastructure",
+      "tags": [
+        "acceptance",
+        "orchestrator"
+      ],
+      "triggers": [
+        "acceptance",
+        "orchestrator",
+        "coding",
+        "task",
+        "should",
+        "driven",
+        "issue",
+        "intake",
+        "through",
+        "review",
+        "deployment",
+        "verification"
+      ],
+      "path": "skills/acceptance-orchestrator/SKILL.md"
     },
     {
       "id": "accessibility-compliance-accessibility-audit",
@@ -1405,6 +1430,33 @@
         "glassmorphism"
       ],
       "path": "skills/antigravity-design-expert/SKILL.md"
+    },
+    {
+      "id": "antigravity-skill-orchestrator",
+      "name": "antigravity-skill-orchestrator",
+      "description": "A meta-skill that understands task requirements, dynamically selects appropriate skills, tracks successful skill combinations using agent-memory-mcp, and prevents skill overuse for simple tasks.",
+      "category": "general",
+      "tags": [
+        "[orchestration",
+        "meta-skill",
+        "agent-memory",
+        "task-evaluation]"
+      ],
+      "triggers": [
+        "[orchestration",
+        "meta-skill",
+        "agent-memory",
+        "task-evaluation]",
+        "antigravity",
+        "skill",
+        "orchestrator",
+        "meta",
+        "understands",
+        "task",
+        "requirements",
+        "dynamically"
+      ],
+      "path": "skills/antigravity-skill-orchestrator/SKILL.md"
     },
     {
       "id": "antigravity-workflows",
@@ -7984,6 +8036,32 @@
       "path": "skills/close-automation/SKILL.md"
     },
     {
+      "id": "closed-loop-delivery",
+      "name": "closed-loop-delivery",
+      "description": "Use when a coding task must be completed against explicit acceptance criteria with minimal user re-intervention across implementation, review feedback, deployment, and runtime verification.",
+      "category": "infrastructure",
+      "tags": [
+        "closed",
+        "loop",
+        "delivery"
+      ],
+      "triggers": [
+        "closed",
+        "loop",
+        "delivery",
+        "coding",
+        "task",
+        "must",
+        "completed",
+        "against",
+        "explicit",
+        "acceptance",
+        "criteria",
+        "minimal"
+      ],
+      "path": "skills/closed-loop-delivery/SKILL.md"
+    },
+    {
       "id": "cloud-architect",
       "name": "cloud-architect",
       "description": "Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and modern architectural patterns.",
@@ -9519,6 +9597,32 @@
         "starting"
       ],
       "path": "skills/create-branch/SKILL.md"
+    },
+    {
+      "id": "create-issue-gate",
+      "name": "create-issue-gate",
+      "description": "Use when starting a new implementation task and an issue must be created with strict acceptance criteria gating before execution.",
+      "category": "general",
+      "tags": [
+        "create",
+        "issue",
+        "gate"
+      ],
+      "triggers": [
+        "create",
+        "issue",
+        "gate",
+        "starting",
+        "new",
+        "task",
+        "must",
+        "created",
+        "strict",
+        "acceptance",
+        "criteria",
+        "gating"
+      ],
+      "path": "skills/create-issue-gate/SKILL.md"
     },
     {
       "id": "create-pr",
@@ -11492,6 +11596,30 @@
         "connects"
       ],
       "path": "skills/earllm-build/SKILL.md"
+    },
+    {
+      "id": "electron-development",
+      "name": "electron-development",
+      "description": "Master Electron desktop app development with secure IPC, contextIsolation, preload scripts, multi-process architecture, electron-builder packaging, code signing, and auto-update.",
+      "category": "architecture",
+      "tags": [
+        "electron"
+      ],
+      "triggers": [
+        "electron",
+        "development",
+        "desktop",
+        "app",
+        "secure",
+        "ipc",
+        "contextisolation",
+        "preload",
+        "scripts",
+        "multi",
+        "process",
+        "architecture"
+      ],
+      "path": "skills/electron-development/SKILL.md"
     },
     {
       "id": "elixir-pro",
@@ -16430,6 +16558,35 @@
       "path": "skills/internal-comms-community/SKILL.md"
     },
     {
+      "id": "interview-coach",
+      "name": "interview-coach",
+      "description": "Full job search coaching system — JD decoding, resume, storybank, mock interviews, transcript analysis, comp negotiation. 23 commands, persistent state.",
+      "category": "general",
+      "tags": [
+        "interview",
+        "job-search",
+        "coaching",
+        "career",
+        "storybank",
+        "negotiation"
+      ],
+      "triggers": [
+        "interview",
+        "job-search",
+        "coaching",
+        "career",
+        "storybank",
+        "negotiation",
+        "coach",
+        "full",
+        "job",
+        "search",
+        "jd",
+        "decoding"
+      ],
+      "path": "skills/interview-coach/SKILL.md"
+    },
+    {
       "id": "inventory-demand-planning",
       "name": "inventory-demand-planning",
       "description": "Codified expertise for demand forecasting, safety stock optimisation, replenishment planning, and promotional lift estimation at multi-location retailers.",
@@ -17960,6 +18117,32 @@
         "output"
       ],
       "path": "skills/llm-prompt-optimizer/SKILL.md"
+    },
+    {
+      "id": "llm-structured-output",
+      "name": "llm-structured-output",
+      "description": "Get reliable JSON, enums, and typed objects from LLMs using response_format, tool_use, and schema-constrained decoding across OpenAI, Anthropic, and Google APIs.",
+      "category": "data-ai",
+      "tags": [
+        "llm",
+        "structured",
+        "output"
+      ],
+      "triggers": [
+        "llm",
+        "structured",
+        "output",
+        "get",
+        "reliable",
+        "json",
+        "enums",
+        "typed",
+        "objects",
+        "llms",
+        "response",
+        "format"
+      ],
+      "path": "skills/llm-structured-output/SKILL.md"
     },
     {
       "id": "local-legal-seo-audit",
@@ -22290,6 +22473,31 @@
         "issues"
       ],
       "path": "skills/prisma-expert/SKILL.md"
+    },
+    {
+      "id": "privacy-by-design",
+      "name": "privacy-by-design",
+      "description": "Use when building apps that collect user data. Ensures privacy protections are built in from the start—data minimization, consent, encryption.",
+      "category": "security",
+      "tags": [
+        "privacy",
+        "by"
+      ],
+      "triggers": [
+        "privacy",
+        "by",
+        "building",
+        "apps",
+        "collect",
+        "user",
+        "data",
+        "ensures",
+        "protections",
+        "built",
+        "start",
+        "minimization"
+      ],
+      "path": "skills/privacy-by-design/SKILL.md"
     },
     {
       "id": "privilege-escalation-methods",

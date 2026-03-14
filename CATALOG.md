@@ -2,9 +2,9 @@
 
 Generated at: 2026-02-08T00:00:00.000Z
 
-Total skills: 1246
+Total skills: 1254
 
-## architecture (80)
+## architecture (81)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -40,6 +40,7 @@ Total skills: 1246
 | `doc-coauthoring` | Guide users through a structured workflow for co-authoring documentation. Use when user wants to write documentation, proposals, technical specs, decision do... | doc, coauthoring | doc, coauthoring, users, through, structured, co, authoring, documentation, user, wants, write, proposals |
 | `docs-architect` | Creates comprehensive technical documentation from existing codebases. Analyzes architecture, design patterns, and implementation details to produce long-for... | docs | docs, architect, creates, technical, documentation, existing, codebases, analyzes, architecture, details, produce, long |
 | `domain-driven-design` | Plan and route Domain-Driven Design work from strategic modeling to tactical implementation and evented architecture patterns. | [ddd, domain, bounded-context, architecture] | [ddd, domain, bounded-context, architecture], driven, plan, route, work, strategic, modeling, tactical, evented |
+| `electron-development` | Master Electron desktop app development with secure IPC, contextIsolation, preload scripts, multi-process architecture, electron-builder packaging, code sign... | electron | electron, development, desktop, app, secure, ipc, contextisolation, preload, scripts, multi, process, architecture |
 | `elixir-pro` | Write idiomatic Elixir code with OTP patterns, supervision trees, and Phoenix LiveView. Masters concurrency, fault tolerance, and distributed systems. | elixir | elixir, pro, write, idiomatic, code, otp, supervision, trees, phoenix, liveview, masters, concurrency |
 | `error-detective` | Search logs and codebases for error patterns, stack traces, and anomalies. Correlates errors across systems and identifies root causes. | error, detective | error, detective, search, logs, codebases, stack, traces, anomalies, correlates, errors, identifies, root |
 | `error-handling-patterns` | Master error handling patterns across languages including exceptions, Result types, error propagation, and graceful degradation to build resilient applicatio... | error, handling | error, handling, languages, including, exceptions, result, types, propagation, graceful, degradation, resilient, applications |
@@ -168,7 +169,7 @@ calculations | startup, business, analyst, market, opportunity | startup, busine
 | `warren-buffett` | Agente que simula Warren Buffett — o maior investidor do seculo XX e XXI, CEO da Berkshire Hathaway, discipulo de Benjamin Graham e socio intelectual de Char... | persona, investing, value-investing, business | persona, investing, value-investing, business, warren, buffett, agente, que, simula, maior, investidor, do |
 | `whatsapp-automation` | Automate WhatsApp Business tasks via Rube MCP (Composio): send messages, manage templates, upload media, and handle contacts. Always search tools first for c... | whatsapp | whatsapp, automation, automate, business, tasks, via, rube, mcp, composio, send, messages, upload |
 
-## data-ai (229)
+## data-ai (230)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -329,6 +330,7 @@ search for spreadsheets, and view metadata. Use wh... | google, sheets | google,
 | `llm-evaluation` | Implement comprehensive evaluation strategies for LLM applications using automated metrics, human feedback, and benchmarking. Use when testing LLM performanc... | llm, evaluation | llm, evaluation, applications, automated, metrics, human, feedback, benchmarking, testing, performance, measuring, ai |
 | `llm-ops` | LLM Operations -- RAG, embeddings, vector databases, fine-tuning, prompt engineering avancado, custos de LLM, evals de qualidade e arquiteturas de IA para pr... | llm, rag, embeddings, vector-db, fine-tuning | llm, rag, embeddings, vector-db, fine-tuning, ops, operations, vector, databases, fine, tuning, prompt |
 | `llm-prompt-optimizer` | Use when improving prompts for any LLM. Applies proven prompt engineering techniques to boost output quality, reduce hallucinations, and cut token usage. | llm, prompt, optimizer | llm, prompt, optimizer, improving, prompts, any, applies, proven, engineering, techniques, boost, output |
+| `llm-structured-output` | Get reliable JSON, enums, and typed objects from LLMs using response_format, tool_use, and schema-constrained decoding across OpenAI, Anthropic, and Google A... | llm, structured, output | llm, structured, output, get, reliable, json, enums, typed, objects, llms, response, format |
 | `magic-animator` | AI-powered animation tool for creating motion in logos, UI, icons, and social media assets. | magic, animator | magic, animator, ai, powered, animation, creating, motion, logos, ui, icons, social, media |
 | `mailchimp-automation` | Automate Mailchimp email marketing including campaigns, audiences, subscribers, segments, and analytics via Rube MCP (Composio). Always search tools first fo... | mailchimp | mailchimp, automation, automate, email, marketing, including, campaigns, audiences, subscribers, segments, analytics, via |
 | `makepad-splash` | CRITICAL: Use for Makepad Splash scripting language. Triggers on:
@@ -600,7 +602,7 @@ no matching field, parse error, widget... | makepad, reference | makepad, refere
 | `zod-validation-expert` | Expert in Zod — TypeScript-first schema validation. Covers parsing, custom errors, refinements, type inference, and integration with React Hook Form, Next.js... | zod, validation | zod, validation, typescript, first, schema, covers, parsing, custom, errors, refinements, type, inference |
 | `zustand-store-ts` | Create Zustand stores with TypeScript, subscribeWithSelector middleware, and proper state/action separation. Use when building React state management, creati... | zustand, store, ts | zustand, store, ts, stores, typescript, subscribewithselector, middleware, proper, state, action, separation, building |
 
-## general (295)
+## general (298)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -616,6 +618,7 @@ no matching field, parse error, widget... | makepad, reference | makepad, refere
 | `angular-migration` | Migrate from AngularJS to Angular using hybrid mode, incremental component rewriting, and dependency injection updates. Use when upgrading AngularJS applicat... | angular, migration | angular, migration, migrate, angularjs, hybrid, mode, incremental, component, rewriting, dependency, injection, updates |
 | `anti-reversing-techniques` | Understand anti-reversing, obfuscation, and protection techniques encountered during software analysis. Use when analyzing protected binaries, bypassing anti... | anti, reversing, techniques | anti, reversing, techniques, understand, obfuscation, protection, encountered, during, software, analysis, analyzing, protected |
 | `antigravity-design-expert` | Core UI/UX engineering skill for building highly interactive, spatial, weightless, and glassmorphism-based web interfaces using GSAP and 3D CSS. | antigravity | antigravity, core, ui, ux, engineering, skill, building, highly, interactive, spatial, weightless, glassmorphism |
+| `antigravity-skill-orchestrator` | A meta-skill that understands task requirements, dynamically selects appropriate skills, tracks successful skill combinations using agent-memory-mcp, and pre... | [orchestration, meta-skill, agent-memory, task-evaluation] | [orchestration, meta-skill, agent-memory, task-evaluation], antigravity, skill, orchestrator, meta, understands, task, requirements, dynamically |
 | `apify-lead-generation` | Generates B2B/B2C leads by scraping Google Maps, websites, Instagram, TikTok, Facebook, LinkedIn, YouTube, and Google Search. Use when user asks to find lead... | apify, lead, generation | apify, lead, generation, generates, b2b, b2c, leads, scraping, google, maps, websites, instagram |
 | `apify-trend-analysis` | Discover and track emerging trends across Google Trends, Instagram, Facebook, YouTube, and TikTok to inform content strategy. | apify, trend | apify, trend, analysis, discover, track, emerging, trends, google, instagram, facebook, youtube, tiktok |
 | `app-builder` | Main application building orchestrator. Creates full-stack applications from natural language requests. Determines project type, selects tech stack, coordina... | app, builder | app, builder, main, application, building, orchestrator, creates, full, stack, applications, natural, language |
@@ -672,6 +675,7 @@ no matching field, parse error, widget... | makepad, reference | makepad, refere
 | `context-optimization` | This skill should be used when the user asks to "optimize context", "reduce token costs", "improve context efficiency", "implement KV-cache optimization", "p... | optimization | optimization, context, skill, should, used, user, asks, optimize, reduce, token, costs, improve |
 | `cpp-pro` | Write idiomatic C++ code with modern features, RAII, smart pointers, and STL algorithms. Handles templates, move semantics, and performance optimization. | cpp | cpp, pro, write, idiomatic, code, features, raii, smart, pointers, stl, algorithms, move |
 | `create-branch` | Create a git branch following Sentry naming conventions. Use when asked to "create a branch", "new branch", "start a branch", "make a branch", "switch to a n... | create, branch | create, branch, git, following, sentry, naming, conventions, asked, new, start, switch, starting |
+| `create-issue-gate` | Use when starting a new implementation task and an issue must be created with strict acceptance criteria gating before execution. | create, issue, gate | create, issue, gate, starting, new, task, must, created, strict, acceptance, criteria, gating |
 | `daily` | Documentation and capabilities reference for Daily | daily | daily, documentation, capabilities, reference |
 | `daily-news-report` | Scrapes content based on a preset URL list, filters high-quality technical information, and generates daily Markdown reports. | daily, news, report | daily, news, report, scrapes, content, preset, url, list, filters, high, quality, technical |
 | `debugging-strategies` | Master systematic debugging techniques, profiling tools, and root cause analysis to efficiently track down bugs across any codebase or technology stack. Use ... | debugging, strategies | debugging, strategies, systematic, techniques, profiling, root, cause, analysis, efficiently, track, down, bugs |
@@ -753,6 +757,7 @@ a... | evolution | evolution, critical, makepad, skills, self, contribution, tri
 | `interactive-portfolio` | Expert in building portfolios that actually land jobs and clients - not just showing work, but creating memorable experiences. Covers developer portfolios, d... | interactive, portfolio | interactive, portfolio, building, portfolios, actually, land, jobs, clients, just, showing, work, creating |
 | `internal-comms-anthropic` | A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenev... | internal, comms, anthropic | internal, comms, anthropic, set, resources, me, write, all, kinds, communications, formats, my |
 | `internal-comms-community` | A set of resources to help me write all kinds of internal communications, using the formats that my company likes to use. Claude should use this skill whenev... | internal, comms, community | internal, comms, community, set, resources, me, write, all, kinds, communications, formats, my |
+| `interview-coach` | Full job search coaching system — JD decoding, resume, storybank, mock interviews, transcript analysis, comp negotiation. 23 commands, persistent state. | interview, job-search, coaching, career, storybank, negotiation | interview, job-search, coaching, career, storybank, negotiation, coach, full, job, search, jd, decoding |
 | `inventory-demand-planning` | Codified expertise for demand forecasting, safety stock optimisation, replenishment planning, and promotional lift estimation at multi-location retailers. | inventory, demand, planning | inventory, demand, planning, codified, expertise, forecasting, safety, stock, optimisation, replenishment, promotional, lift |
 | `issues` | Interact with GitHub issues - create, list, and view issues. | issues | issues, interact, github, list, view |
 | `julia-pro` | Master Julia 1.10+ with modern features, performance optimization, multiple dispatch, and production-ready practices. | julia | julia, pro, 10, features, performance, optimization, multiple, dispatch |
@@ -918,10 +923,11 @@ matrix-sdk, matrix client, robrix, mat... | robius, matrix, integration | robius
 | `yann-lecun-tecnico` | Sub-skill técnica de Yann LeCun. Cobre CNNs, LeNet, backpropagation, JEPA (I-JEPA, V-JEPA, MC-JEPA), AMI (Advanced Machinery of Intelligence), Self-Supervise... | persona, cnn, jepa, self-supervised, pytorch | persona, cnn, jepa, self-supervised, pytorch, yann, lecun, tecnico, sub, skill, cnica, de |
 | `youtube-summarizer` | Extract transcripts from YouTube videos and generate comprehensive, detailed summaries using intelligent analysis frameworks | [video, summarization, transcription, youtube, content-analysis] | [video, summarization, transcription, youtube, content-analysis], summarizer, extract, transcripts, videos, generate, detailed, summaries |
 
-## infrastructure (132)
+## infrastructure (134)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
+| `acceptance-orchestrator` | Use when a coding task should be driven end-to-end from issue intake through implementation, review, deployment, and acceptance verification with minimal hum... | acceptance, orchestrator | acceptance, orchestrator, coding, task, should, driven, issue, intake, through, review, deployment, verification |
 | `agent-evaluation` | Testing and benchmarking LLM agents including behavioral testing, capability assessment, reliability metrics, and production monitoring—where even top agents... | agent, evaluation | agent, evaluation, testing, benchmarking, llm, agents, including, behavioral, capability, assessment, reliability, metrics |
 | `airflow-dag-patterns` | Build production Apache Airflow DAGs with best practices for operators, sensors, testing, and deployment. Use when creating data pipelines, orchestrating wor... | airflow, dag | airflow, dag, apache, dags, operators, sensors, testing, deployment, creating, data, pipelines, orchestrating |
 | `api-testing-observability-api-mock` | You are an API mocking expert specializing in realistic mock services for development, testing, and demos. Design mocks that simulate real API behavior and e... | api, observability, mock | api, observability, mock, testing, mocking, specializing, realistic, development, demos, mocks, simulate, real |
@@ -961,6 +967,7 @@ scripts. | bash | bash, pro, defensive, scripting, automation, ci, cd, pipelines
 | `cicd-automation-workflow-automate` | You are a workflow automation expert specializing in creating efficient CI/CD pipelines, GitHub Actions workflows, and automated development processes. Desig... | cicd, automate | cicd, automate, automation, specializing, creating, efficient, ci, cd, pipelines, github, actions, automated |
 | `claude-d3js-skill` | Creating interactive data visualisations using d3.js. This skill should be used when creating custom charts, graphs, network diagrams, geographic visualisati... | claude, d3js, skill | claude, d3js, skill, creating, interactive, data, visualisations, d3, js, should, used, custom |
 | `claude-monitor` | Monitor de performance do Claude Code e sistema local. Diagnostica lentidao, mede CPU/RAM/disco, verifica API latency e gera relatorios de saude do sistema. | monitoring, performance, diagnostics, system-health | monitoring, performance, diagnostics, system-health, claude, monitor, de, do, code, sistema, local, diagnostica |
+| `closed-loop-delivery` | Use when a coding task must be completed against explicit acceptance criteria with minimal user re-intervention across implementation, review feedback, deplo... | closed, loop, delivery | closed, loop, delivery, coding, task, must, completed, against, explicit, acceptance, criteria, minimal |
 | `cloud-architect` | Expert cloud architect specializing in AWS/Azure/GCP multi-cloud infrastructure design, advanced IaC (Terraform/OpenTofu/CDK), FinOps cost optimization, and ... | cloud | cloud, architect, specializing, aws, azure, gcp, multi, infrastructure, iac, terraform, opentofu, cdk |
 | `cloud-devops` | Cloud infrastructure and DevOps workflow covering AWS, Azure, GCP, Kubernetes, Terraform, CI/CD, monitoring, and cloud-native development. | cloud, devops | cloud, devops, infrastructure, covering, aws, azure, gcp, kubernetes, terraform, ci, cd, monitoring |
 | `code-review-ai-ai-review` | You are an expert AI-powered code review specialist combining automated static analysis, intelligent pattern recognition, and modern DevOps practices. Levera... | code, ai | code, ai, review, powered, combining, automated, static, analysis, intelligent, recognition, devops, leverage |
@@ -1060,7 +1067,7 @@ distri... | makepad, deployment | makepad, deployment, critical, packaging, trig
 | `workflow-automation` | Workflow automation is the infrastructure that makes AI agents reliable. Without durable execution, a network hiccup during a 10-step payment flow means lost... |  | automation, infrastructure, makes, ai, agents, reliable, without, durable, execution, network, hiccup, during |
 | `x-twitter-scraper` | X (Twitter) data platform skill — tweet search, user lookup, follower extraction, engagement metrics, giveaway draws, monitoring, webhooks, 19 extraction too... | [twitter, x-api, scraping, mcp, social-media, data-extraction, giveaway, monitoring, webhooks] | [twitter, x-api, scraping, mcp, social-media, data-extraction, giveaway, monitoring, webhooks], twitter, scraper, data |
 
-## security (145)
+## security (146)
 
 | Skill | Description | Tags | Triggers |
 | --- | --- | --- | --- |
@@ -1162,6 +1169,7 @@ distri... | makepad, deployment | makepad, deployment, critical, packaging, trig
 | `plaid-fintech` | Expert patterns for Plaid API integration including Link token flows, transactions sync, identity verification, Auth for ACH, balance checks, webhook handlin... | plaid, fintech | plaid, fintech, api, integration, including, link, token, flows, transactions, sync, identity, verification |
 | `popup-cro` | Create and optimize popups, modals, overlays, slide-ins, and banners to increase conversions without harming user experience or brand trust. | popup, cro | popup, cro, optimize, popups, modals, overlays, slide, ins, banners, increase, conversions, without |
 | `postmortem-writing` | Write effective blameless postmortems with root cause analysis, timelines, and action items. Use when conducting incident reviews, writing postmortem documen... | postmortem, writing | postmortem, writing, write, effective, blameless, postmortems, root, cause, analysis, timelines, action, items |
+| `privacy-by-design` | Use when building apps that collect user data. Ensures privacy protections are built in from the start—data minimization, consent, encryption. | privacy, by | privacy, by, building, apps, collect, user, data, ensures, protections, built, start, minimization |
 | `product-manager` | Senior PM agent with 6 knowledge domains, 30+ frameworks, 12 templates, and 32 SaaS metrics with formulas. Pure Markdown, zero scripts. | product-management, saas, frameworks, metrics, strategy | product-management, saas, frameworks, metrics, strategy, product, manager, senior, pm, agent, knowledge, domains |
 | `quant-analyst` | Build financial models, backtest trading strategies, and analyze market data. Implements risk metrics, portfolio optimization, and statistical arbitrage. | quant, analyst | quant, analyst, financial, models, backtest, trading, analyze, market, data, implements, risk, metrics |
 | `red-team-tactics` | Red team tactics principles based on MITRE ATT&CK. Attack phases, detection evasion, reporting. | red, team, tactics | red, team, tactics, principles, mitre, att, ck, attack, phases, detection, evasion, reporting |
