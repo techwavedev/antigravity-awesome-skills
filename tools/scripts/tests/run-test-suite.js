@@ -23,6 +23,7 @@ const LOCAL_TEST_COMMANDS = [
   [path.join(TOOL_SCRIPTS, "run-python.js"), path.join(TOOL_TESTS, "test_fix_missing_skill_metadata.py")],
   [path.join(TOOL_SCRIPTS, "run-python.js"), path.join(TOOL_TESTS, "test_fix_missing_skill_sections.py")],
   [path.join(TOOL_SCRIPTS, "run-python.js"), path.join(TOOL_TESTS, "test_fix_truncated_descriptions.py")],
+  [path.join(TOOL_SCRIPTS, "run-python.js"), path.join(TOOL_TESTS, "test_generate_index_categories.py")],
   [path.join(TOOL_SCRIPTS, "run-python.js"), path.join(TOOL_TESTS, "test_sync_microsoft_skills_security.py")],
   [path.join(TOOL_SCRIPTS, "run-python.js"), path.join(TOOL_TESTS, "test_validate_skills_headings.py")],
 ];
